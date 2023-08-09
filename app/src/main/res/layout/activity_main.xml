@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.main.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/landing_background"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonVIewSavedImages"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:fontFamily="serif"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/_12ssp"
+        android:layout_marginEnd="@dimen/_12ssp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:text="@string/saved_images"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        app:backgroundTint="@color/buttonSavedImage"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:id="@+id/buttonEditNewImage"
+        android:layout_marginStart="@dimen/_12ssp"
+        android:layout_marginEnd="@dimen/_12ssp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:text="@string/edit_new_image"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:backgroundTint="@color/buttonEditNewImage"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@id/buttonVIewSavedImages"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSubtitle"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:includeFontPadding="false"
+        android:text="@string/let_s_create_something_new"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toTopOf="@id/buttonEditNewImage"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTitle"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:fontFamily="serif"
+        android:includeFontPadding="false"
+        android:text="@string/image_filters"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintBottom_toTopOf="@id/textSubtitle"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
